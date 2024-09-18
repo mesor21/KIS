@@ -10,7 +10,7 @@ import java.util.List;
 @Interceptors(ProfileInterceptor.class)
 public class CombinatoricsComponent {
 
-    @Inject @ARRANGEMENT_WITHOUT_REPETITION
+    @Inject
     private ICombinatoricsCalculator arrangementWithoutRepetitionCalculator;
 
     @Inject @ARRANGEMENT_WITH_REPETITION

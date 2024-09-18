@@ -1,10 +1,13 @@
 package example.method;
 
+import javax.enterprise.inject.Default;
+
 import java.util.List;
 
 /**
  * Реализация размещений без повторений
  */
+@Default
 @ARRANGEMENT_WITHOUT_REPETITION
 public class ArrangementWithoutRepetition implements ICombinatoricsCalculator {
     @Override

@@ -14,5 +14,4 @@ public class ProfileInterceptor {
             System.out.println(ic.getMethod() + " took " + diffTime + " nanoseconds");
         }
     }
-
 }
