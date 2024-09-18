@@ -6,12 +6,12 @@ import javax.interceptor.InvocationContext;
 public class ProfileInterceptor {
     @AroundInvoke
     public Object profile(InvocationContext ic) throws Exception {
-        long initTime = System.currentTimeMillis();
+        long initTime = System.nanoTime();
         try {
             return ic.proceed();
         } finally {
-            long diffTime = System.currentTimeMillis() - initTime;
-            System.out.println(ic.getMethod() + " took " + diffTime + " millis");
+            long diffTime = System.nanoTime() - initTime;
+            System.out.println(ic.getMethod() + " took " + diffTime + " nanoseconds");
         }
     }
 

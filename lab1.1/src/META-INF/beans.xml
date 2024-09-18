@@ -3,12 +3,4 @@
        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                            http://xmlns.jcp.org/xml/ns/javaee/beans_2_0.xsd"
        bean-discovery-mode="all">
-    <alternatives>
-        <class>example.component.ArrangementWithoutRepetition</class>
-        <class>example.component.ArrangementWithRepetition</class>
-        <class>example.component.PermutationWithoutRepetition</class>
-        <class>example.component.PermutationWithRepetition</class>
-        <class>example.component.CombinationWithoutRepetition</class>
-        <class>example.component.CombinationWithRepetition</class>
-    </alternatives>
 </beans>
